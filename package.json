@@ -1,6 +1,6 @@
 {
 	"name": "@paulisystems/create-cli",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"private": false,
 	"description": "Scaffolding more clis",
 	"author": "Birgit Pauli-Haack",
@@ -15,7 +15,7 @@
 		"url": "https://github.com/bph/create-cli"
 	},
 	"bugs": {
-	  "url": "https://github.com/bph/create-cli/issues"
+		"url": "https://github.com/bph/create-cli/issues"
 	},
 	"bin": {
 		"create-cli": "index.js",
