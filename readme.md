@@ -8,15 +8,16 @@ This CLI creates the scaffolding for a new node CLI package.
 `
 
 ## Input: 
-* name:  Give your new CLI a name in kebab-notation.  This is also used as a directory name of the new CLI. 
-- _command:_ command to initiate the CLI. Optional. If left blank the cli name is used as command, too. 
-- description: Enter a description for your new CLI. 
-- version: default `0.0.1` 
-- license: default  `MIT`
-- author information with name, email and url. These will be stored in the /utils/.history folder for future scaffolding
+* **name:**  Give your new CLI a name in kebab-notation.  This is also used as a directory name of the new CLI. 
+* **command:** command to initiate the CLI. Optional. If left blank the cli name is used as command, too. 
+* **description:** Enter a description for your new CLI. 
+* **version:** _default_ `0.0.1` 
+* **license:** _default_  `MIT`
+* **authorName**, **authorEmail**, **authorURL** Author information with name, email and url. These will be stored in the /utils/.history folder for future scaffolding
 
 
-Modify the files in the */template* folder for additional default settings. 
+Modify the files in the */template* folder for additional default settings. Use {{nvarname}} for replacement variables. 
+
 
 Use `ncli help` for commands and options. 
 

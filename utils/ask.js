@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 const { Input } = require('enquirer');
 const to = require('await-to-js').default;
 const handleError = require('cli-handle-error');
