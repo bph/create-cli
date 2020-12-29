@@ -1,11 +1,14 @@
 # create-cli
 
-This CLI creates the scaffolding for a new node CLI package. 
+This CLI for nodejs creates the scaffolding for a new node CLI package. 
 
 ## Install 
 
-`npm install @paulisystems/create-cli
-`
+`npm install @paulisystems/create-cli`
+
+## Usage ##
+
+`npm ncli`
 
 ## Input: 
 * **name:**  Give your new CLI a name in kebab-notation.  This is also used as a directory name of the new CLI. 
