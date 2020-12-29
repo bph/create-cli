@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const init = require('./utils/init');
-const cli = require('./utils/cli');
-const log = require('./utils/log');
+const init     = require('./utils/init');
+const cli      = require('./utils/cli');
+const log      = require('./utils/log');
 const generate = require('./utils/generate');
 
 const input = cli.input;
@@ -12,7 +12,12 @@ const {clear,debug} = flags;
     init({ clear, });
     input.includes(`help`) && cli.showHelp(0);
 
-    await generate();
+    /** 
+     * when we have all the questions answered, saved in history and validated, 
+     * we generate the folders and files from the /template/ folder. 
+    */
+
+    await generate(); 
 
     debug && log(flags);
      

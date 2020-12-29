@@ -2,6 +2,7 @@ const meow = require('meow');
 const meowHelp = require('cli-meow-help');
 
 const flags = {
+
     clear: {
         type: `boolean`,
         default: true,
@@ -24,7 +25,7 @@ const flags = {
 
 const commands = {
     help: {
-        description: `Print help info`,
+        desc: `Print help info`,
     }
 }
 

@@ -1,6 +1,7 @@
 const ask = require('./ask');
 
 module.exports = (async () => {
+    
     const name = await ask({ 
         name: `name`,
         message:`CLI name?`,
@@ -12,12 +13,30 @@ module.exports = (async () => {
         hint:`(optional: if different from CLI name)`, 
         //initial: name,
     });
-    const description = await ask({name: `description`, message:`CLI description?`});
-    const version = await ask({name: `version`, message: `CLI version number`, initial: `0.0.1`});
-    const license = await ask({name: `license`, message: `CLI license`, initial: `MIT`});
-    const authorName = await ask({name: `authorName`, message: `Author Name`});
-    const authorEmail = await ask({name: `authorEmail`, message: `Author email address`});
-    const authorUrl = await ask({name: `authorUrl`, message: `Author web address`});
+    const description = await ask({
+        name: `description`, 
+        message:`CLI description?`
+    });
+    const version = await ask({
+        name: `version`, 
+        message: `CLI version number`, 
+        initial: `0.0.1`
+    });
+    const license = await ask({
+        name: `license`, 
+        message: `CLI license`, 
+        initial: `MIT`
+    });
+    const authorName = await ask({
+        name: `authorName`, 
+        message: `Author Name`
+    });
+    const authorEmail = await ask({
+        name: `authorEmail`, 
+        message: `Author email address`});
+    const authorUrl = await ask({
+        name: `authorUrl`, 
+        message: `Author's web site`});
 
     const vars = { 
     name,

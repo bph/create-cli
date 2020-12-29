@@ -29,7 +29,7 @@ module.exports = async ({name, message, hint, initial}) => {
                 history,
                 validate(value, state){
                    
-                    if (state && state.name === `command`) return true; // no npm dedupe necessary :-) we just leave the value empty
+                    if (state && state.name === `command`) return true; 
                     if (state && state.name === `name`) {
                         if (fs.existsSync(value))  {
                             return `This directory already exists ./${value}`;
@@ -39,7 +39,7 @@ module.exports = async ({name, message, hint, initial}) => {
                     }
                     return !value ? `Please add a value`: true; 
                 }
-            })  //.on(`cancel`, () => process.exit(1))
+            })  //.on(`cancel`, () => process.exit(1)) or we could add the code from shouldCancel to this package.
                 .on(`cancel`, () => shouldCancel())
                 .run()
         );
