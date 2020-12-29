@@ -1,6 +1,6 @@
 {
 	"name": "@paulisystems/create-cli",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": false,
 	"description": "Scaffolding more clis",
 	"author": "Birgit Pauli-Haack",
