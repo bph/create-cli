@@ -10,9 +10,19 @@
 		"cli",
 		"scaffolding"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bph/create-cli"
+	},
+	"bugs": {
+	  "url": "https://github.com/bph/create-cli/issues"
+	},
 	"bin": {
 		"create-cli": "index.js",
 		"ncli": "index.js"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"scripts": {
 		"format": "prettier --write \"./**/*.{js,json}\""
