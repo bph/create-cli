@@ -24,11 +24,11 @@ const flags = {
 
 const commands = {
     help: {
-        description: `Print help info`,
+        desc: `Print help info`,
     }
 }
 
-const helptext = meowHelp({
+const helpText = meowHelp({
     name: `{{command}}`,
     flags, 
     commands,
