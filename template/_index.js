@@ -19,4 +19,4 @@ const { clear, debug } = flags;
     input.includes(`help`) && cli.showHelp(0);
 
     debug && log(flags);
-})
+})();
